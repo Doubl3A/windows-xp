@@ -1,0 +1,4 @@
+.desktop {
+    height: calc(100vh - var(--taskbar-height));
+    width: 100%;
+}

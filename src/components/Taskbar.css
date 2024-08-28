@@ -1,0 +1,6 @@
+.taskbar {
+    width: 100%;
+    height: var(--taskbar-height);
+    background: rgb(8, 92, 227);
+    background: linear-gradient(0deg, rgba(8, 92, 227, 1) 85%, rgba(0, 212, 255, 1) 100%);
+}

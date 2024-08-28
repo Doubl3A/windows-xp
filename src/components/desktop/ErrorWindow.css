@@ -1,0 +1,37 @@
+:root {
+    --window-edge-gap: 0.5rem;
+}
+
+.error-window {
+    border-radius: 5px 5px 1px 1px;
+    border-width: 5px;
+    border-color: rgb(8, 92, 227);
+    background-color: #f8f6e6;
+
+    height: 300px;
+    width: 500px;
+}
+
+.error-window__title-bar {
+    border-radius: 5px 5px 0 0;
+    background: rgb(8, 92, 227);
+    background: linear-gradient(0deg, rgba(8, 92, 227, 1) 85%, rgba(0, 212, 255, 1) 100%);
+    color: var(--default-text-color);
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--window-edge-gap);
+}
+
+.error-window__close-button {
+    background: rgb(227, 88, 52);
+    background: linear-gradient(-45deg, rgba(227, 88, 52, 1) 0%, rgba(255, 136, 105, 1) 95%);
+
+    border-radius: 5px;
+    border: solid 1px #ebf0fd;
+    color: var(--default-text-color);
+}
+
+.error-window__content {
+    margin: .25rem var(--window-edge-gap);
+}

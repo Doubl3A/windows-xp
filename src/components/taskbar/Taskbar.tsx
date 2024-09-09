@@ -1,8 +1,8 @@
-import './Taskbar.css'
+import './Taskbar.scss'
 
-import StartButton from "./taskbar/StartButton.tsx";
-import WindowTabs from "./taskbar/WindowTabs.tsx";
-import ProcessMenu from "./taskbar/ProcessMenu.tsx";
+import StartButton from "./startButton/StartButton.tsx";
+import WindowTabs from "./windowTabs/WindowTabs.tsx";
+import ProcessMenu from "./processMenu/ProcessMenu.tsx";
 
 function Taskbar() {
     return (

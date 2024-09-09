@@ -1,4 +1,4 @@
-import "./StartButton.css"
+import "./StartButton.scss"
 
 function StartButton() {
     return (

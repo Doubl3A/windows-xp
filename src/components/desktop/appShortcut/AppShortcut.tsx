@@ -1,9 +1,9 @@
-import "./AppShortcut.css"
+import "./AppShortcut.scss"
 
 
 import Draggable from "react-draggable";
 import React, {useState} from "react";
-import ErrorWindow from "./ErrorWindow.tsx";
+import ErrorWindow from "../errorWindow/ErrorWindow.tsx";
 
 interface AppShortcutProps {
     AppName: string;
@@ -32,7 +32,7 @@ function AppShortcut(props: AppShortcutProps) {
                 handle={".app-shortcut"}
             >
                 <button className={"app-shortcut"} onClick={handleAppInteraction}>
-                    <img src={props.AppIconUrl} alt={""}/>
+                    <img src={props.AppIconUrl} alt={""} draggable={false}/>
                     <h2>{props.AppName}</h2>
                 </button>
             </Draggable>

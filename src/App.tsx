@@ -1,6 +1,6 @@
 import './App.css'
-import Desktop from "./components/Desktop.tsx";
-import Taskbar from "./components/Taskbar.tsx";
+import Desktop from "./components/desktop/Desktop.tsx";
+import Taskbar from "./components/taskbar/Taskbar.tsx";
 import {SpeedInsights} from "@vercel/speed-insights/react";
 import {Analytics} from "@vercel/analytics/react";
 

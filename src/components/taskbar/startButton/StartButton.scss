@@ -2,7 +2,7 @@
     height: 100%;
     background: rgb(54, 175, 47);
     background: linear-gradient(0deg, rgba(54, 175, 47, 1) 85%, rgba(44, 241, 33, 1) 100%);
-    color: var(--default-text-color);
+    color: var(--default-text-color, #f3f9f4);
 
     display: flex;
     align-items: center;
@@ -11,9 +11,9 @@
     font-size: 1.5rem;
 
     padding: 0.25rem 1.5rem 0.25rem 1rem;
-}
 
-.start-button img {
-    height: 2rem;
-    width: 2rem;
+    &img {
+        height: 2rem;
+        width: 2rem;
+    }
 }

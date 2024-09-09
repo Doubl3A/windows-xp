@@ -1,10 +1,10 @@
-import "./ErrorWindow.css"
+import "./ErrorWindow.scss"
 
 import Draggable from 'react-draggable';
 import {MdOutlineClose} from "react-icons/md";
 
 interface ErrorWindowProps {
-    handleClose: () => void;
+    handleClose?: () => void;
 }
 
 function ErrorWindow(props: ErrorWindowProps) {

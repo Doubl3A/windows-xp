@@ -1,11 +1,9 @@
 .app-shortcut {
     display: grid;
     justify-items: center;
-}
-
-.app-shortcut img {
-    height: 4rem;
-    width: 4em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 
     user-drag: none;
     user-select: none;
@@ -13,9 +11,14 @@
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-}
 
-.app-shortcut h2 {
-    color: var(--default-text-color);
-    font-size: 1.25rem;
+    &img {
+        height: 4rem;
+        width: 4em;
+    }
+
+    &h2 {
+        color: var(--default-text-color);
+        font-size: 1.25rem;
+    }
 }

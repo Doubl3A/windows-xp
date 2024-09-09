@@ -1,5 +1,5 @@
-import './Desktop.css'
-import AppShortcut from "./desktop/AppShortcut.tsx";
+import './Desktop.scss'
+import AppShortcut from "./appShortcut/AppShortcut.tsx";
 
 function Desktop() {
     return (

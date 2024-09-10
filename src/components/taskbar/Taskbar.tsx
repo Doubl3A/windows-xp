@@ -1,3 +1,4 @@
+import "xp.css/dist/XP.css";
 import './Taskbar.scss'
 
 import StartButton from "./startButton/StartButton.tsx";
@@ -6,7 +7,7 @@ import ProcessMenu from "./processMenu/ProcessMenu.tsx";
 
 function Taskbar() {
     return (
-        <div className={"taskbar"}>
+        <div className={"title-bar taskbar"}>
             <StartButton/>
             <WindowTabs/>
             <ProcessMenu/>

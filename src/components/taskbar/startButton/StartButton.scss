@@ -1,8 +1,14 @@
 .start-button {
+    font-family: "Trebuchet MS", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+
     height: 100%;
     background: rgb(54, 175, 47);
     background: linear-gradient(0deg, rgba(54, 175, 47, 1) 85%, rgba(44, 241, 33, 1) 100%);
     color: var(--default-text-color, #f3f9f4);
+    border: none;
+    border-radius: 0;
 
     display: flex;
     align-items: center;
@@ -12,8 +18,13 @@
 
     padding: 0.25rem 1.5rem 0.25rem 1rem;
 
-    &img {
-        height: 2rem;
-        width: 2rem;
+    &:hover, :active {
+        box-shadow: none;
+        outline: none;
+    }
+
+    & img {
+        height: 1.75rem;
+        width: 1.75rem;
     }
 }

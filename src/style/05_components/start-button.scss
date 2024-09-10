@@ -1,26 +1,44 @@
 .start-button {
-    font-family: "Trebuchet MS", sans-serif;
-    font-style: italic;
-    font-weight: bold;
+    background-image: url("./icons/start-button/default.png");
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    box-shadow: none;
+    transition: background 100ms;
+    border: none;
 
     height: 100%;
-    background: rgb(54, 175, 47);
-    background: linear-gradient(0deg, rgba(54, 175, 47, 1) 85%, rgba(44, 241, 33, 1) 100%);
-    color: var(--default-text-color, #f3f9f4);
-    border: none;
-    border-radius: 0;
-
+    width: 8rem;
     display: flex;
     align-items: center;
-    column-gap: 1rem;
+    column-gap: 0.75rem;
+    padding-left: 0.5rem;
 
-    font-size: 1.5rem;
+    span {
+        font-size: 1.5rem;
+        font-family: "Trebuchet MS", sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        color: white;
+    }
 
-    padding: 0.25rem 1.5rem 0.25rem 1rem;
-
-    &:hover, :active {
-        box-shadow: none;
+    &:active,
+    &:hover,
+    &:focus {
+        box-shadow: none !important;
         outline: none;
+    }
+
+    &:hover {
+        background-image: url("./icons/start-button/hover.png");
+    }
+
+    &:not(:disabled):active {
+        background-image: url("./icons/start-button/active.png");
+
+        & img, span {
+            opacity: .8;
+        }
     }
 
     & img {

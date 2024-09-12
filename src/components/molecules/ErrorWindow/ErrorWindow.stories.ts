@@ -1,6 +1,8 @@
 import type {Meta, StoryObj} from "@storybook/react";
 import ErrorWindow from "./ErrorWindow.tsx";
 
+// TODO - not a molecule? (At least not yet)
+
 const meta = {
     title: "Desktop/Error Window",
     component: ErrorWindow,

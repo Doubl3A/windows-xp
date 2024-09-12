@@ -1,9 +1,6 @@
-import "./AppShortcut.scss"
-
-
 import Draggable from "react-draggable";
 import React, {useState} from "react";
-import ErrorWindow from "../errorWindow/ErrorWindow.tsx";
+import ErrorWindow from "../../molecules/ErrorWindow/ErrorWindow.tsx";
 
 interface AppShortcutProps {
     AppName: string;

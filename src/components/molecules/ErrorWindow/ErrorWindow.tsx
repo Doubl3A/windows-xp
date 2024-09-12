@@ -1,5 +1,5 @@
+// TODO - Implement xp css on a component level
 import "xp.css/dist/XP.css";
-import "./ErrorWindow.scss"
 
 import Draggable from 'react-draggable';
 

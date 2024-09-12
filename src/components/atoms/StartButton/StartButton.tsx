@@ -1,5 +1,3 @@
-import "./StartButton.scss"
-
 function StartButton() {
     return (
         <button className={"start-button"}>

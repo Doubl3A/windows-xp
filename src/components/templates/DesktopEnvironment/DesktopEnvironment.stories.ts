@@ -1,20 +1,20 @@
 import type {Meta, StoryObj} from "@storybook/react";
-import StartButton from "./StartButton.tsx";
+import DesktopEnvironment from "./DesktopEnvironment.tsx";
 
 const meta = {
-    title: "Desktop/Start button",
-    component: StartButton,
+    title: "Templates/DesktopEnvironment",
+    component: DesktopEnvironment,
     tags: ["autodocs"],
     parameters: {
-        layout: "centered",
+        layout: "",
     },
     argTypes: {},
     args: {}
-}satisfies Meta<typeof StartButton>;
+}satisfies Meta<typeof DesktopEnvironment>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-    args: {}
+    args: {},
 };

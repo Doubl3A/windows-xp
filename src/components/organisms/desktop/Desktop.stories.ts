@@ -2,7 +2,7 @@ import type {Meta, StoryObj} from "@storybook/react";
 import Desktop from "./Desktop.tsx";
 
 const meta = {
-    title: "Desktop",
+    title: "Organisms/Desktop",
     component: Desktop,
     tags: ["autodocs"],
     parameters: {

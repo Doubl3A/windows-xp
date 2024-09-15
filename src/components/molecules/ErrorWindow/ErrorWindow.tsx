@@ -1,7 +1,5 @@
-// TODO - Implement xp css on a component level
-import "xp.css/dist/XP.css";
-
 import Draggable from 'react-draggable';
+import TitleBar from "../../atoms/TitleBar/TitleBar.tsx";
 
 interface ErrorWindowProps {
     handleClose?: () => void;
@@ -10,18 +8,9 @@ interface ErrorWindowProps {
 function ErrorWindow(props: ErrorWindowProps) {
     return (
         <Draggable handle={".title-bar"}>
-            <section className={"window error-window"}>
-                <div className={"title-bar error-window__title-bar"}>
-                    <div className={"title-bar-text"}>Error - Failed to open Discord</div>
-                    <div className={"title-bar-controls"}>
-                        <button aria-label="Minimize"></button>
-                        <button aria-label={"Close"}
-                                className={"error-window__close-button"}
-                                onClick={props.handleClose}>
-                        </button>
-                    </div>
-                </div>
-                <div className={"window-body"}>
+            <section className={"error-window"}>
+                <TitleBar windowName={"Failed to open Discord"} handleClose={props.handleClose}/>
+                <div className={"error-window__content"}>
                     <p>
                         An error occurred while trying to open the Discord application. Please contact customer support
                         if this problem persists.

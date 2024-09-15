@@ -1,14 +1,24 @@
 // Reset
+// -----------------
 @import "./01_reset/reset";
+
 // Settings
+// -----------------
 @import "./02_settings/settings";
+
 // Tools
+// -----------------
 @import "03_tools/mixins";
+
 // Templates
-@import "04_Templates/default";
+// -----------------
+@import "04_Templates/desktop-environment";
+
 // Components
+// -----------------
 @import "05_components/desktop";
 @import "05_components/taskbar";
 @import "05_components/error-window";
 @import "05_components/app-shortcut";
 @import "05_components/start-button";
+@import "05_components/title-bar";

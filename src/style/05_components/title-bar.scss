@@ -1,0 +1,90 @@
+.title-bar {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Trebuchet MS";
+    background: var(--title-bar-bg);
+    padding: 3px 5px 3px 3px;
+    border-top: 1px solid #0831d9;
+    border-left: 1px solid #0831d9;
+    border-right: 1px solid #001ea0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 7px;
+    font-size: 13px;
+    text-shadow: 1px 1px #0f1089;
+
+    span {
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 0;
+        margin-right: 1.5rem;
+        padding-left: 0.25rem;
+    }
+
+    &__controls {
+        display: flex;
+
+        button {
+            padding: 0;
+            display: block;
+            min-width: 21px;
+            min-height: 21px;
+            margin-left: 2px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            box-shadow: none;
+            background-color: #0050ee;
+            transition: background 100ms;
+            border: none;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:active,
+            &:hover,
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    &__close {
+        background-image: url("../../../public/icons/title-bar/close.png");
+
+        &:hover {
+            background-image: url("./icons/title-bar/close-hover.png");
+        }
+
+        &:not(:disabled):active {
+            background-image: url("./icons/title-bar/close-active.png");
+        }
+    }
+
+    &__minimize {
+        background-image: url("./icons/title-bar/minimize.png");
+
+        &:hover {
+            background-image: url("./icons/title-bar/minimize-hover.png");
+        }
+
+        &:not(:disabled):active {
+            background-image: url("./icons/title-bar/minimize-active.png");
+        }
+    }
+
+    &__expand {
+        background-image: url("./icons/title-bar/maximize.png");
+
+        &:hover {
+            background-image: url("./icons/title-bar/maximize-hover.png");
+        }
+
+        &:not(:disabled):active {
+            background-image: url("./icons/title-bar/maximize-active.png");
+        }
+    }
+}

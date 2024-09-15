@@ -1,13 +1,18 @@
-:root {
-    --window-edge-gap: 0.5rem;
-}
-
 .error-window {
     width: 500px;
     min-height: 200px;
     font-size: .875rem;
 
-    &__title-bar {
-        height: unset;
+    background: var(--surface);
+    box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee,
+    inset -3px -3px #003bda, inset 3px 3px #0855dd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    padding: 0 0 3px 0;
+    -webkit-font-smoothing: antialiased;
+
+    &__content {
+        margin: 8px;
     }
 }

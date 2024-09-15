@@ -2,11 +2,11 @@ import type {Meta, StoryObj} from "@storybook/react";
 import Taskbar from "./Taskbar.tsx";
 
 const meta = {
-    title: "Taskbar",
+    title: "Organisms/Taskbar",
     component: Taskbar,
     tags: ["autodocs"],
     parameters: {
-        layout: "centered",
+        layout: "padded",
     },
     argTypes: {},
     args: {}

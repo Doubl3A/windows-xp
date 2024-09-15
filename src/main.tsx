@@ -3,11 +3,11 @@ import {StrictMode} from 'react'
 import {createRoot} from 'react-dom/client'
 import {SpeedInsights} from "@vercel/speed-insights/react";
 import {Analytics} from "@vercel/analytics/react";
-import Default from "./components/templates/Default/Default.tsx";
+import DesktopEnvironment from "./components/templates/DesktopEnvironment/DesktopEnvironment.tsx";
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <Default/>
+        <DesktopEnvironment/>
         <SpeedInsights/>
         <Analytics/>
     </StrictMode>

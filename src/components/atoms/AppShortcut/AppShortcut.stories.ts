@@ -3,7 +3,7 @@ import AppShortcut from "./AppShortcut.tsx";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-    title: "Desktop/Application Shortcut",
+    title: "Atoms/Application Shortcut",
     component: AppShortcut,
     // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
     tags: ["autodocs"],
@@ -26,5 +26,5 @@ export const Default: Story = {
     args: {
         AppName: "Discord",
         AppIconUrl: "/discord-app-icon.png"
-    }
+    },
 };

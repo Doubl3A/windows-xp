@@ -1,0 +1,35 @@
+// Reset
+// -----------------
+@import "01_reset/reset";
+
+// Settings
+// -----------------
+@import "02_settings/settings";
+
+// Tools
+// -----------------
+@import "03_tools/mixins";
+
+// Atoms
+// -----------------
+@import "04_atoms/app-shortcut";
+@import "04_atoms/start-button";
+@import "04_atoms/title-bar";
+@import "04_atoms/shortcut-button";
+@import "04_atoms/separator";
+
+// Molecules
+// -----------------
+@import "05_molecules/error-window";
+@import "05_molecules/program-list";
+@import "05_molecules/document-list";
+
+// Organisms
+// -----------------
+@import "06_organisms/desktop";
+@import "06_organisms/taskbar";
+@import "06_organisms/start-menu";
+
+// Templates
+// -----------------
+@import "07_templates/desktop-environment";

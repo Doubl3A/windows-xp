@@ -1,0 +1,43 @@
+import Draggable from "react-draggable";
+import React, {useState} from "react";
+import ErrorWindow from "../../molecules/ErrorWindow/ErrorWindow.tsx";
+
+interface AppShortcutProps {
+    AppName: string;
+    AppIconUrl: string;
+}
+
+function AppShortcut(props: AppShortcutProps) {
+    const [applicationOpen, setApplicationOpen] = useState(false);
+
+    const handleAppInteraction = async (e: React.MouseEvent<HTMLButtonElement>) => {
+        if (e.detail == 2) {
+
+            await new Promise(resolve => setTimeout(resolve, 1000));
+
+            setApplicationOpen(true);
+        }
+    }
+
+    const handleWindowClose = () => {
+        setApplicationOpen(false);
+    }
+
+    return (
+        <>
+            <Draggable
+                handle={".app-shortcut"}
+            >
+                <button className={"app-shortcut"} onClick={handleAppInteraction}>
+                    <img src={props.AppIconUrl} alt={""} draggable={false}/>
+                    <h2>{props.AppName}</h2>
+                </button>
+            </Draggable>
+
+            {applicationOpen && <ErrorWindow handleClose={handleWindowClose}/>}
+        </>
+
+    );
+}
+
+export default AppShortcut;

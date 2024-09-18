@@ -1,0 +1,68 @@
+// Responsive mixins
+$screen-small: 25rem;
+$screen-medium: 40rem;
+$screen-large: 60rem;
+$screen-xlarge: 75rem;
+$screen-xxlarge: 100rem;
+
+// Up
+@mixin small-up {
+  @media (min-width: $screen-small) {
+    @content;
+  }
+}
+
+@mixin medium-up {
+  @media (min-width: $screen-medium) {
+    @content;
+  }
+}
+
+@mixin large-up {
+  @media (min-width: $screen-large) {
+    @content;
+  }
+}
+
+@mixin xlarge-up {
+  @media (min-width: $screen-xlarge) {
+    @content;
+  }
+}
+
+@mixin xxlarge-up {
+  @media (min-width: $screen-xxlarge) {
+    @content;
+  }
+}
+
+// Down
+@mixin small-down {
+  @media (max-width: $screen-small) {
+    @content;
+  }
+}
+
+@mixin medium-down {
+  @media (max-width: $screen-medium) {
+    @content;
+  }
+}
+
+@mixin large-down {
+  @media (max-width: $screen-large) {
+    @content;
+  }
+}
+
+@mixin xlarge-down {
+  @media (max-width: $screen-xlarge) {
+    @content;
+  }
+}
+
+@mixin xxlarge-down {
+  @media (max-width: $screen-xxlarge) {
+    @content;
+  }
+}

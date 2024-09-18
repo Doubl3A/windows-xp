@@ -1,0 +1,17 @@
+.separator {
+    height: 1px;
+    width: 80%;
+    margin-bottom: 0.25rem;
+
+    &--light {
+        background: var(--separator-gradient-light);
+    }
+
+    &--dark {
+        background: var(--separator-gradient-dark);
+    }
+
+    &--orange {
+        background: var(--separator-gradient-orange);
+    }
+}

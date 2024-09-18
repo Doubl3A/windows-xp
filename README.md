@@ -1,12 +1,18 @@
 # Windows XP
 
-A simple react application mimicign the Windows XP experience
+A simple react application to mimic the Windows XP experience
 
 # Development
 
 - Developed with ```Node 20.x```
 
-# Future work
+## Project Structure
 
-- Complete the desktop taskbar
-- Add the windows start menu
+This app follows the atomic design. This is nicely described [here](https://bradfrost.com/blog/post/atomic-web-design/)
+
+# Sources and inspiration
+
+- [XP.css - GitHub](https://botoxparty.github.io/XP.css/)
+- [Windows XP icons - Internet Archive](https://archive.org/details/WindowsXPExtractedIcons)
+- [Windows XP Account icons - Internet Archive](https://archive.org/details/WindowsXPUserAccountPictures)
+- [Windows XP start button - Classic Shell](http://www.classicshell.net/forum/viewtopic.php?t=3206)

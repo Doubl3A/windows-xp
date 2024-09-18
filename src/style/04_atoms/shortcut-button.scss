@@ -1,0 +1,79 @@
+:root {
+    --button-padding-height: 0.875rem;
+    --small-height: 1.5rem;
+    --default-height: 2rem;
+}
+
+.shortcut-button {
+    font-family: Tahoma, sans-serif;
+    color: var(--button-text-color);
+
+    width: 100%;
+    min-width: min-content;
+    padding: 0.25rem 0.125rem;
+
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+    &:hover {
+        background-color: var(--button-hover-bg-color);
+        color: var(--button-text-color-light);
+    }
+
+    &--default {
+        min-height: var(--default-height);
+
+        img {
+            height: var(--default-height);
+            width: var(--default-height);
+        }
+
+        div {
+            height: var(--default-height);
+        }
+    }
+
+    &--small {
+        min-height: calc(var(--small-height) + var(--button-padding-height));
+
+        img {
+            height: var(--small-height);
+            width: var(--small-height);
+        }
+
+        div {
+            height: var(--small-height);
+        }
+    }
+
+
+    &__content {
+        display: grid;
+        justify-items: baseline;
+        align-items: center;
+    }
+
+    &__title,
+    &__description {
+        font-size: 0.875rem;
+        min-height: .875rem;
+        line-height: 1;
+        text-align: left;
+    }
+
+    &__title {
+        &--normal {
+            font-weight: normal;
+        }
+
+        &--bold {
+            font-weight: bold;
+        }
+    }
+
+    &__description {
+        font-weight: normal;
+        opacity: .9;
+    }
+}

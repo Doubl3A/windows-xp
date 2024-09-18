@@ -1,0 +1,70 @@
+.start-menu {
+    width: 475px;
+    border-left: 2px solid var(--start-menu-border-color);
+    border-right: 2px solid var(--start-menu-border-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 9px;
+
+    &__user {
+        color: var(--default-text-color);
+        font-size: 1.125rem;
+        font-weight: bold;
+
+        height: 80px;
+
+        display: flex;
+        justify-content: flex-start;
+        gap: .5rem;
+        padding-left: 0.75rem;
+
+        img {
+            border: 2px solid silver;
+            border-radius: 2px;
+        }
+    }
+
+    &__programs {
+        height: 438px;
+        display: flex;
+
+        .separator--orange {
+            height: 3px;
+            position: absolute;
+            left: 10%;
+        }
+    }
+
+    &__power-settings {
+        // reversed background: linear-gradient(180deg, #003dd7, #003dd7 8%, #005bff 40%, #06f 88%, #06f 93%, #0050ee 95%, #0053ee 96%, #0997ff);
+        background: var(--title-bar-bg);
+        padding: 3px 5px 3px 3px;
+
+        height: 51px;
+
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        column-gap: 1rem;
+
+        button {
+            display: flex;
+            align-items: center;
+            column-gap: 0.5rem;
+            padding-right: 0.5rem;
+
+            color: var(--button-text-color-light);
+            font-size: 0.875rem;
+
+            &:hover, &:active {
+                box-shadow: none;
+                background-color: var(--button-hover-bg-color);
+                outline: none;
+            }
+
+            img {
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+}

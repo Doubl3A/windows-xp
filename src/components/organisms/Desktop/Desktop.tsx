@@ -4,7 +4,7 @@ function Desktop() {
     return (
         <div className={"desktop"}>
             {/*Discord Desktop app*/}
-            <AppShortcut AppName={"Discord"} AppIconUrl={"/discord-app-icon.png"}/>
+            <AppShortcut AppName={"Discord"} AppIconUrl={"/images/discord-app-icon.png"}/>
         </div>
     );
 }

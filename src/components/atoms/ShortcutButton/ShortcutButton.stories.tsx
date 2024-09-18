@@ -20,5 +20,28 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const Default: Story = {
+    args: {
+        titleStyle: "bold",
+        size: "default",
+    }
+};
+
+export const LargeBold: Story = {
+    name: "Default no description",
+    args: {
+        titleStyle: "bold",
+        size: "default",
+        description: ""
+    }
+};
+
+export const Small: Story = {
+    name: "Small",
+    args: {
+        titleStyle: "bold",
+        size: "small",
+        description: ""
+    }
+};
 

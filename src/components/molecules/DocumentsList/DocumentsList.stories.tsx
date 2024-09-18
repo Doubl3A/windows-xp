@@ -1,17 +1,17 @@
 import type {Meta, StoryObj} from "@storybook/react";
-import ProgramsList from "./ProgramsList.tsx";
+import DocumentsList from "./DocumentsList.tsx";
 
 const meta = {
-    title: "Molecules/Program List",
-    component: ProgramsList,
+    title: "Molecules/Documents List",
+    component: DocumentsList,
     tags: ["autodocs"],
     parameters: {
         layout: "centered",
     },
     argTypes: {},
     args: {},
-    render: () => <div style={{height: "400px"}}><ProgramsList/></div>
-}satisfies Meta<typeof ProgramsList>;
+    render: () => <div style={{height: "400px"}}><DocumentsList/></div>
+}satisfies Meta<typeof DocumentsList>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

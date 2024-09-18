@@ -10,7 +10,7 @@ interface ShortcutButtonProps {
 
 function ShortcutButton(props: ShortcutButtonProps) {
     return (
-        <li>
+        <li className={"shortcut-button__item"}>
             <button className={`shortcut-button shortcut-button--${props.size}`} onClick={props.onClick}>
                 <img src={props.iconUrl} alt=""/>
                 <div className={"shortcut-button__content"}>

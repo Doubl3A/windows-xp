@@ -5,7 +5,6 @@
 }
 
 .shortcut-button {
-    font-family: Tahoma, sans-serif;
     color: var(--button-text-color);
 
     width: 100%;
@@ -75,5 +74,9 @@
     &__description {
         font-weight: normal;
         opacity: .9;
+    }
+
+    &__item {
+        list-style: none;
     }
 }

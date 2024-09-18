@@ -25,6 +25,6 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
     args: {
         AppName: "Discord",
-        AppIconUrl: "/discord-app-icon.png"
+        AppIconUrl: "/images/discord-app-icon.png"
     },
 };

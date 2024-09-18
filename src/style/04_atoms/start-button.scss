@@ -1,0 +1,47 @@
+.start-button {
+    background-image: url("./icons/start-button/default.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: background 100ms;
+
+    height: 100%;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.75rem;
+    padding-left: 0.5rem;
+
+    &--active {
+        background-image: url("./icons/start-button/active.png");
+
+        & img, span {
+            opacity: .8;
+        }
+
+        &:hover {
+            background-image: url("./icons/start-button/active.png") !important;
+        }
+    }
+
+    &:hover {
+        background-image: url("./icons/start-button/hover.png");
+    }
+
+    &:active {
+        @extend .start-button--active;
+    }
+
+    span {
+        font-size: 1.5rem;
+        font-family: "Trebuchet MS", sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        color: var(--default-text-color);
+    }
+
+    img {
+        height: 1.75rem;
+        width: 1.75rem;
+    }
+}

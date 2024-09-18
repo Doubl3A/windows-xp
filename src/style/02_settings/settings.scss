@@ -5,8 +5,6 @@
 
 // Global variables
 :root {
-    // TODO - cleanup unused vars
-
     // ----------------------------------------
     // FONTS
     --sans-serif: "Pixelated MS Sans Serif", Arial;
@@ -15,12 +13,7 @@
     // COLORS
     --default-text-color: #ffffff;
 
-    --button-highlight: #ffffff;
-    --button-face: #dfdfdf;
-    --button-shadow: #808080;
-    --surface: #ece9d8;
-    --window-frame: #0a0a0a;
-
+    --window-surface: #ece9d8;
     --title-bar-bg: linear-gradient(
                     180deg,
                     rgba(9, 151, 255, 1) 0%,
@@ -41,6 +34,7 @@
 
     --start-menu-border-color: #1854c2;
 
+    // Separator colors
     --separator-gradient-light: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(211, 211, 200, 1) 50%, rgba(255, 255, 255, 1) 100%);
     --separator-gradient-dark: linear-gradient(90deg, rgba(206, 231, 250, 1) 0%, rgba(159, 181, 213, 1) 50%, rgba(206, 231, 250, 1) 100%);
     --separator-gradient-orange: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(249, 147, 50, 1) 50%, rgba(206, 231, 250, 1) 100%);
@@ -48,7 +42,4 @@
     // ----------------------------------------
     // MEASUREMENTS
     --taskbar-height: 2.5rem;
-
-    --border-window-outer: inset -1px -1px var(--window-frame), inset 1px 1px var(--button-face);
-    --border-window-inner: inset -2px -2px var(--button-shadow), inset 2px 2px var(--button-highlight);
 }

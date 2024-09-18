@@ -1,11 +1,9 @@
 .start-button {
     background-image: url("./icons/start-button/default.png");
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-size: cover !important;
-    box-shadow: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     transition: background 100ms;
-    border: none;
 
     height: 100%;
     width: 8rem;
@@ -19,14 +17,7 @@
         font-family: "Trebuchet MS", sans-serif;
         font-style: italic;
         font-weight: bold;
-        color: white;
-    }
-
-    &:active,
-    &:hover,
-    &:focus {
-        box-shadow: none !important;
-        outline: none;
+        color: var(--default-text-color);
     }
 
     &:hover {
@@ -41,7 +32,7 @@
         }
     }
 
-    & img {
+    img {
         height: 1.75rem;
         width: 1.75rem;
     }

@@ -1,6 +1,6 @@
 function WindowTabs() {
     return (
-        <div>
+        <div className={"window-tabs"}>
 
         </div>
     );

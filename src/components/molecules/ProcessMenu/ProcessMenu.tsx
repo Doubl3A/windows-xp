@@ -1,7 +1,9 @@
+import CurrentTime from "../../atoms/CurrentTime/CurrentTime.tsx";
+
 function ProcessMenu() {
     return (
-        <div>
-            {/*Process menu with clock + date*/}
+        <div className={"process-menu"}>
+            <CurrentTime/>
         </div>
     );
 }

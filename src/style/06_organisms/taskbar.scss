@@ -6,5 +6,9 @@
 
     background: var(--title-bar-bg);
 
+    // TODO - check and validate
+    background: rgb(56, 136, 233);
+    background: linear-gradient(180deg, rgba(56, 136, 233, 1) 0%, rgba(73, 147, 230, 1) 5%, rgba(34, 87, 213, 1) 18%, rgba(38, 99, 224, 1) 90%, rgba(25, 65, 165, 1) 100%);
+
     display: flex;
 }

@@ -9,7 +9,19 @@ const meta = {
         layout: "padded",
     },
     argTypes: {},
-    args: {}
+    args: {
+        activeWindows: [
+            {
+                windowName: "Minesweeper",
+                iconUrl: "/icons/applications/minesweeper.png"
+            },
+            {
+                windowName: "Internet Explorer",
+                iconUrl: "/icons/applications/internet-explorer.png",
+                isFocused: true
+            },
+        ]
+    },
 }satisfies Meta<typeof Taskbar>;
 
 export default meta;

@@ -1,12 +1,13 @@
 import {useState} from "react";
 
 function CurrentTime() {
-    const [time, setTime] = useState(new Date())
+    const [time] = useState(new Date())
 
-    const UpdateTime = () => {
-        setTime(new Date())
-    }
-    setInterval(UpdateTime)
+    // TODO - Rework. Cause slowdown of whole web app
+    // const UpdateTime = () => {
+    //     setTime(new Date())
+    // }
+    // setInterval(UpdateTime)
 
     return (
         <span>{time.toLocaleTimeString()}</span>

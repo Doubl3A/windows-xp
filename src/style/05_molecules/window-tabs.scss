@@ -1,3 +1,12 @@
 .window-tabs {
     flex: 1;
+    display: flex;
+    padding-left: .5rem;
+    padding-top: .3rem;
+
+    list-style: none;
+
+    &__items {
+        height: min-content;
+    }
 }

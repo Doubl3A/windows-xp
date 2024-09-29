@@ -1,12 +1,15 @@
 import Desktop from "../../organisms/Desktop/Desktop.tsx";
 import Taskbar from "../../organisms/Taskbar/Taskbar.tsx";
+import DesktopEnvironmentProvider from "../../../context/DesktopEnvironmentContextType.tsx";
 
 function DesktopEnvironment() {
     return (
-        <div className={"desktop-environment"}>
-            <Desktop/>
-            <Taskbar/>
-        </div>
+        <DesktopEnvironmentProvider>
+            <div className={"desktop-environment"}>
+                <Desktop/>
+                <Taskbar/>
+            </div>
+        </DesktopEnvironmentProvider>
     )
 }
 

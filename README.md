@@ -16,3 +16,4 @@ This app follows the atomic design. This is nicely described [here](https://brad
 - [Windows XP icons - Internet Archive](https://archive.org/details/WindowsXPExtractedIcons)
 - [Windows XP Account icons - Internet Archive](https://archive.org/details/WindowsXPUserAccountPictures)
 - [Windows XP start button - Classic Shell](http://www.classicshell.net/forum/viewtopic.php?t=3206)
+- [RetroBars - GitHub](https://github.com/dremin/RetroBar/blob/master/RetroBar/Themes/Windows%20XP%20Blue.xaml)

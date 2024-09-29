@@ -9,7 +9,7 @@ const meta = {
         layout: "centered",
     },
     argTypes: {},
-    args: {}
+    args: {},
 }satisfies Meta<typeof Desktop>;
 
 export default meta;

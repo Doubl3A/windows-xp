@@ -17,6 +17,10 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
+        appInfo: {
+            name: "Discord",
+            iconUrl: ""
+        },
         handleClose: () => null,
     },
 };

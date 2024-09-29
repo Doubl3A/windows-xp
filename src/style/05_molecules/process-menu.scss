@@ -5,10 +5,18 @@
     padding-right: .75rem;
 
     background: #0997ff;
-    background: linear-gradient(180deg, rgba(9, 151, 255, 1) 0%, rgba(19, 152, 232, 1) 8%, rgba(19, 150, 231, 1) 40%, rgba(15, 162, 237, 1) 80%, rgba(25, 164, 238, 1) 93%, rgba(12, 123, 210, 1) 95%, rgba(0, 100, 191, 1) 96%, rgba(69, 134, 199, 1) 100%);
+    background: linear-gradient(180deg,
+            #16adf0 0%,
+            #19b9f3 5%,
+            #1290e8 18%,
+            #0d8dea 60%,
+            #0fa0ef 90%,
+            #1582dc 100%
+    );
+    border-left: 1px solid #3822c4f4; /* Combining left borders */
+
     color: #b8fbfd;
     font-size: 0.875rem;
 
-    box-shadow: -1px 0px 1px #013d78;
     cursor: default;
 }

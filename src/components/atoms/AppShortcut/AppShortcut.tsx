@@ -1,40 +1,46 @@
 import Draggable from "react-draggable";
-import React, {useState} from "react";
+import {IApplication} from "../../../interfaces/IApplication.ts";
+import {useState} from "react";
 import ErrorWindow from "../../molecules/ErrorWindow/ErrorWindow.tsx";
 
-interface AppShortcutProps {
-    AppName: string;
-    AppIconUrl: string;
+export interface AppShortcutProps {
+    appInfo: IApplication,
+    addApplication?: (application: IApplication) => void,
+    removeApplication?: (application: IApplication) => void,
 }
 
 function AppShortcut(props: AppShortcutProps) {
     const [applicationOpen, setApplicationOpen] = useState(false);
 
     const handleAppInteraction = async (e: React.MouseEvent<HTMLButtonElement>) => {
-        if (e.detail == 2) {
+        if (e.detail == 2 && !applicationOpen) {
 
-            await new Promise(resolve => setTimeout(resolve, 1000));
+            await new Promise(resolve => setTimeout(resolve, 500));
 
             setApplicationOpen(true);
+            if (props?.addApplication) {
+                props.addApplication(props.appInfo);
+            }
         }
     }
 
     const handleWindowClose = () => {
         setApplicationOpen(false);
+        if (props.removeApplication) {
+            props?.removeApplication(props.appInfo);
+        }
     }
 
     return (
         <>
-            <Draggable
-                handle={".app-shortcut"}
-            >
+            <Draggable handle={".app-shortcut"}>
                 <button className={"app-shortcut"} onClick={handleAppInteraction}>
-                    <img src={props.AppIconUrl} alt={""} draggable={false}/>
-                    <h2>{props.AppName}</h2>
+                    <img src={props.appInfo.iconUrl} alt={""} draggable={false}/>
+                    <h2>{props.appInfo.name}</h2>
                 </button>
             </Draggable>
 
-            {applicationOpen && <ErrorWindow handleClose={handleWindowClose}/>}
+            {applicationOpen && <ErrorWindow handleClose={handleWindowClose} appInfo={props.appInfo}/>}
         </>
 
     );

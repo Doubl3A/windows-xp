@@ -10,13 +10,13 @@ const meta = {
     },
     argTypes: {},
     args: {
-        activeWindows: [
+        applications: [
             {
-                windowName: "Minesweeper",
+                name: "Minesweeper",
                 iconUrl: "/icons/applications/minesweeper.png"
             },
             {
-                windowName: "Internet Explorer",
+                name: "Internet Explorer",
                 iconUrl: "/icons/applications/internet-explorer.png",
                 isFocused: true
             },

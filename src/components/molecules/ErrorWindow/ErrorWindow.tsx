@@ -1,9 +1,9 @@
 import TitleBar from "../../atoms/TitleBar/TitleBar.tsx";
 import WindowWrapper from "../../../utils/WindowWrapper.tsx";
-import {IWindowTab} from "../../atoms/WindowTab/WindowTab.tsx";
+import {IApplication} from "../../../interfaces/IApplication.ts";
 
 interface ErrorWindowProps {
-    appInfo: IWindowTab,
+    appInfo: IApplication,
     handleClose: () => void;
 }
 

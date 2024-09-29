@@ -1,11 +1,11 @@
 import Draggable from "react-draggable";
 import {ReactNode} from "react";
-import {IWindowTab} from "../components/atoms/WindowTab/WindowTab.tsx";
+import {IApplication} from "../interfaces/IApplication.ts";
 
 interface IWindowWrapper {
     children: ReactNode;
     draggableSelector: string;
-    applicationInfo: IWindowTab;
+    applicationInfo: IApplication;
 }
 
 function WindowWrapper(props: IWindowWrapper) {

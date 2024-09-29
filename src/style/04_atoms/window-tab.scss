@@ -20,15 +20,6 @@
     border-right: 1px solid #264fad;
     border-bottom: 1px solid #2652bc;
 
-    &--active {
-        background: linear-gradient(0deg, #123d94 0%, #1951b9 5%, #1a50b8 80%, #2156b7 100%);
-
-        border-top: 1px solid #1c62d2;
-        border-left: 1px solid #082970;
-        border-right: 1px solid #0e3c9f;
-        border-bottom: 1px solid #0c3cae;
-    }
-
     &:hover {
         background: linear-gradient(0deg, #8bc0ff 0%, #59a4ff 5%, #569fff 90%, #2a81ff 100%);
 
@@ -41,6 +32,15 @@
     &:hover:has(.window-tab--active) {
         background: linear-gradient(0deg, #3170e2 0%, #2f6bdd 5%, #2c66d8 90%, #295fd2 100%);
 
+    }
+
+    &--active, &:active {
+        background: linear-gradient(0deg, #123d94 0%, #1951b9 5%, #1a50b8 80%, #2156b7 100%);
+
+        border-top: 1px solid #1c62d2;
+        border-left: 1px solid #082970;
+        border-right: 1px solid #0e3c9f;
+        border-bottom: 1px solid #0c3cae;
     }
 
 

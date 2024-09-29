@@ -1,18 +1,19 @@
 import StartButton from "../../atoms/StartButton/StartButton.tsx";
 import WindowTabs from "../../molecules/WindowTabs/WindowTabs.tsx";
 import ProcessMenu from "../../molecules/ProcessMenu/ProcessMenu.tsx";
-import {IWindowTab} from "../../atoms/WindowTab/WindowTab.tsx";
+import {useContext} from "react";
+import {
+    DesktopEnvironmentContext,
+    DesktopEnvironmentContextType
+} from "../../../context/DesktopEnvironmentContextType.tsx";
 
-interface ITaskbar {
-    activeWindows?: IWindowTab[]
-}
-
-function Taskbar(props: ITaskbar) {
+function Taskbar() {
+    const {applications} = useContext(DesktopEnvironmentContext) as DesktopEnvironmentContextType;
 
     return (
         <div className={"taskbar"}>
             <StartButton/>
-            <WindowTabs activeWindows={props.activeWindows ?? []}/>
+            <WindowTabs applications={applications}/>
             <ProcessMenu/>
         </div>
     );

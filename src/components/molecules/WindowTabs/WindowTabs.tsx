@@ -1,14 +1,15 @@
-import WindowTab, {IWindowTab} from "../../atoms/WindowTab/WindowTab.tsx";
+import WindowTab from "../../atoms/WindowTab/WindowTab.tsx";
+import {IApplication} from "../../../interfaces/IApplication.ts";
 
 interface IWindowTabs {
-    activeWindows: IWindowTab[];
+    applications: IApplication[];
 }
 
 function WindowTabs(props: IWindowTabs) {
     return (
         <ul className={"window-tabs"}>
-            {props.activeWindows?.map(window =>
-                <li key={`window-tab-${window.windowName}`} className={"window-tabs__item"}>
+            {props.applications.map(window =>
+                <li key={`window-tab-${window.name}`} className={"window-tabs__item"}>
                     <WindowTab {...window}/>
                 </li>
             )}

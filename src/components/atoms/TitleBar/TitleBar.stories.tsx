@@ -16,17 +16,16 @@ const meta = {
         layout: "centered",
     },
     args: {
-        windowName: "tester"
+        windowName: defaultProps.windowName
     },
 }satisfies Meta<typeof TitleBar>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
-    args: {
-        windowName: "Failed to open Discord",
-    },
+export const Default: Story = {}
+
+export const AllButtonVariants: Story = {
     decorators: () => (
         <div style={{display: "grid", rowGap: "1rem"}}>
             <TitleBar windowName={defaultProps.windowName}

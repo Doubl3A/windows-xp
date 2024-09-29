@@ -10,24 +10,22 @@ const meta = {
     },
     argTypes: {},
     args: {
-        activeWindows: [
+        applications: [
             {
-                windowName: "Minesweeper",
+                name: "Minesweeper",
                 iconUrl: "/icons/applications/minesweeper.png"
             },
             {
-                windowName: "Internet Explorer",
+                name: "Internet Explorer",
                 iconUrl: "/icons/applications/internet-explorer.png",
                 isFocused: true
             },
         ]
-    }
+    },
 }satisfies Meta<typeof WindowTabs>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
-    args: {},
-};
+export const Default: Story = {};
 

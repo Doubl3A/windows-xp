@@ -1,14 +1,10 @@
-export interface IWindowTab {
-    windowName: string;
-    iconUrl: string;
-    isFocused?: boolean;
-}
+import {IApplication} from "../../../interfaces/IApplication.ts";
 
-function WindowTab(props: IWindowTab) {
+function WindowTab(props: IApplication) {
     return (
         <button className={`window-tab ${props.isFocused ? "window-tab--active" : ""}`}>
             <img src={props.iconUrl} alt={""}/>
-            <span>{props.windowName}</span>
+            <span>{props.name}</span>
         </button>
     )
 }

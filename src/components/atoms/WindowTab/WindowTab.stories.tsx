@@ -10,7 +10,7 @@ const meta = {
     },
     argTypes: {},
     args: {
-        windowName: "Minesweeper",
+        name: "Minesweeper",
         iconUrl: "/icons/applications/minesweeper.png"
     }
 }satisfies Meta<typeof WindowTab>;
@@ -23,14 +23,14 @@ export const Default: Story = {}
 
 export const AllVariants: Story = {
     args: {
-        windowName: "Minesweeper",
+        name: "Minesweeper",
         iconUrl: "/icons/applications/minesweeper.png"
     },
     render: (args) => {
         return (
             <div style={{display: "grid", columnGap: "1rem", gridTemplateColumns: "1fr 1fr"}}>
-                <WindowTab windowName={args.windowName} iconUrl={args.iconUrl}/>
-                <WindowTab windowName={args.windowName} iconUrl={args.iconUrl} isFocused={true}/>
+                <WindowTab name={args.name} iconUrl={args.iconUrl}/>
+                <WindowTab name={args.name} iconUrl={args.iconUrl} isFocused={true}/>
             </div>
         )
     }
